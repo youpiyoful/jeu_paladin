@@ -8,14 +8,16 @@ class Personne
   end
 
   def info
-    # A faire:
-    # - Renvoie le nom et les points de vie si la personne est en vie
-    # - Renvoie le nom et "vaincu" si la personne a été vaincue
+    if @en_vie == true 
+      return "#{nom} (#{points_de_vie}/100)"    # - Renvoie le nom et les points de vie si la personne est en vie
+    else
+      return "#{nom} (vaincu)"        # - Renvoie le nom et "vaincu" si la personne a été vaincue
+    end
   end
 
   def attaque(personne)
     # A faire:
-    # - Fait subir des dégats à la personne passée en paramètre
+      # - Fait subir des dégats à la personne passée en paramètre
     # - Affiche ce qu'il s'est passé
   end
 
